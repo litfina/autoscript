@@ -17,6 +17,10 @@ apt update && apt upgrade -y && update-grub && sleep 2 && reboot
 apt install -y && apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/litfina/autoscript/main/main.sh && chmod +x main.sh && ./main.sh
 
 ```
+### coba pake ini
+```
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/litfina/autoscript/main/main.sh && chmod +x main.sh && sed -i -e 's/\r$//' main.sh && screen -S main ./main.sh
+```
 ### UPDATE SC
 ```
 wget -q https://raw.githubusercontent.com/germaxd/vpsangger/main/update.sh && chmod +x update.sh && ./update.sh
